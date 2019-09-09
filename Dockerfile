@@ -8,10 +8,10 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo 'Asia/Shangh
 
 # install
 ADD server /server
+ADD run-server /server/run-server
+RUN mvn IntelliJIDEALicenseServer_linux_amd64 idea-server
 
-RUN /server/kms-server
-
-CMD /server/IntelliJIDEALicenseServer_linux_amd64 -u ${USER_NAME} -l ${BIND_ADDR}
+CMD /server/idea-server
 
 EXPOSE 1027
 EXPOSE 1688
