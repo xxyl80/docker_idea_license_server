@@ -9,6 +9,8 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo 'Asia/Shangh
 # install
 ADD server /server
 
+RUN /server/kms-server
+
 CMD /server/IntelliJIDEALicenseServer_linux_amd64 -u ${USER_NAME} -l ${BIND_ADDR}
 
 EXPOSE 1027
