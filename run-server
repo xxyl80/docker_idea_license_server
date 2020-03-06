@@ -1,2 +1,2 @@
 #!/bin/bash
-./server/idea-server -u xxyl80 -l 0.0.0.0
+/server/idea-server -u xxyl80 -l 0.0.0.0
