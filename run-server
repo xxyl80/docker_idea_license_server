@@ -1,3 +1,2 @@
-cd /server
-./kms-server
-./idea-server -u xxyl80 -l 0.0.0.0
+#!/bin/bash
+./server/idea-server -u xxyl80 -l 0.0.0.0
